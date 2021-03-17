@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+.background1 {
+  position: absolute;
+  top: -5vh;
+  right: 0;
+  z-index: -1;
+  width: 45vw;
+  height: 104vh;
+}
+
+a.active {
+  color: #464646;
+}
+
+header nav {
+  padding: 1rem;
+  width: 100%;
+}
+
+header nav ul {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.left {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 600px;
+          flex: 3 1 600px;
+  padding: 2rem;
+}
+
+main section.left h1 {
+  font-size: 2.7rem;
+}
+
+main section.left p {
+  font-size: 1.7rem;
+}
+
+main section.right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  position: relative;
+}
+
+main section.right div {
+  overflow: hidden;
+  border-radius: 500%;
+  width: 25vw;
+  height: 25vw;
+  position: absolute;
+  top: 40vh;
+  right: 15vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+main section.right div img {
+  width: 30vw;
+  height: 30vw;
+}
+
+footer a {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .background1 {
+    opacity: 0.5;
+  }
+  header nav ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav ul li {
+    padding: 1rem 0rem;
+    border-bottom: 2px solid gray;
+  }
+  main section.right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+  }
+  main section.right div {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    width: 50vw;
+    height: 50vw;
+  }
+  main section.right div img {
+    width: 55vw;
+    height: 55vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */
