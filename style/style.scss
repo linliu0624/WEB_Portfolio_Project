@@ -20,6 +20,10 @@ body {
 a.active {
   color: #464646;
 }
+.pythonImg {
+  width: 15%;
+  height: 5vh;
+}
 
 header {
   nav {
@@ -74,11 +78,44 @@ main {
       }
     }
   }
-}
-footer{
-    a{
-        padding: 1rem;
+  section.table {
+    flex: 3 1 600px;
+    padding: 2rem;
+    table {
+      border-collapse: collapse;
+      tr {
+        border-bottom: 2px solid black;
+        transition: 0.2s ease;
+        td {
+          padding: 1rem;
+        }
+        &:hover {
+          background-color: rgb(190, 190, 190);
+        }
+      }
     }
+  }
+  section.picture {
+    flex: 1 1 500px;
+    position: relative;
+    img {
+      width: 30vw;
+    }
+    div.grayRect {
+      width: 30vw;
+      height: 50vh;
+      background-color: gray;
+      position: absolute;
+      top: 80px;
+      left: 70px;
+      z-index: -1;
+    }
+  }
+}
+footer {
+  a {
+    padding: 1rem;
+  }
 }
 
 @media screen and(max-width: 1100px) {
@@ -108,10 +145,26 @@ footer{
         transform: none;
         width: 50vw;
         height: 50vw;
-        img{
-            width: 55vw;
-            height: 55vw;
+        img {
+          width: 55vw;
+          height: 55vw;
         }
+      }
+    }
+    section.table{
+      img.pythonImg{
+        width: 15vw;
+      }
+    }
+    section.picture {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 50vw;
+      }
+      div.grayRect {
+        display: none;
       }
     }
   }

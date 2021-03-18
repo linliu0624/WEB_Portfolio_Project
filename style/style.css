@@ -23,6 +23,11 @@ a.active {
   color: #464646;
 }
 
+.pythonImg {
+  width: 15%;
+  height: 5vh;
+}
+
 header nav {
   padding: 1rem;
   width: 100%;
@@ -95,6 +100,52 @@ main section.right div img {
   height: 30vw;
 }
 
+main section.table {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 600px;
+          flex: 3 1 600px;
+  padding: 2rem;
+}
+
+main section.table table {
+  border-collapse: collapse;
+}
+
+main section.table table tr {
+  border-bottom: 2px solid black;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+main section.table table tr td {
+  padding: 1rem;
+}
+
+main section.table table tr:hover {
+  background-color: #bebebe;
+}
+
+main section.picture {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  position: relative;
+}
+
+main section.picture img {
+  width: 30vw;
+}
+
+main section.picture div.grayRect {
+  width: 30vw;
+  height: 50vh;
+  background-color: gray;
+  position: absolute;
+  top: 80px;
+  left: 70px;
+  z-index: -1;
+}
+
 footer a {
   padding: 1rem;
 }
@@ -136,6 +187,26 @@ footer a {
   main section.right div img {
     width: 55vw;
     height: 55vw;
+  }
+  main section.table img.pythonImg {
+    width: 15vw;
+  }
+  main section.picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.picture img {
+    width: 50vw;
+  }
+  main section.picture div.grayRect {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
