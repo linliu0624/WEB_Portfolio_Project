@@ -146,6 +146,82 @@ main section.picture div.grayRect {
   z-index: -1;
 }
 
+main section.form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+}
+
+main section.form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 50vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.form form div {
+  margin-bottom: 0.5rem;
+}
+
+main section.form form div label {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+main section.form form div input,
+main section.form form div textarea {
+  background-color: #464646;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.25rem 0rem;
+  border: none;
+  min-width: 40vw;
+}
+
+main section.form form div textarea {
+  vertical-align: top;
+}
+
+main section.form form button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1.5rem 3rem;
+  font-size: 1.5rem;
+  background-color: #464646;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 10%;
+}
+
+main div.line {
+  background-color: black;
+  width: 2px;
+}
+
+main section.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1.5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+}
+
 footer a {
   padding: 1rem;
 }
@@ -206,6 +282,9 @@ footer a {
     width: 50vw;
   }
   main section.picture div.grayRect {
+    display: none;
+  }
+  main div.line {
     display: none;
   }
 }

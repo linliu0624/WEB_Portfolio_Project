@@ -111,6 +111,58 @@ main {
       z-index: -1;
     }
   }
+  section.form {
+    flex: 1 1 600px;
+    form {
+      // height: 70%;
+      display: flex;
+      min-height: 50vh;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      div {
+        margin-bottom: 0.5rem;
+        label {
+          font-size: 1.5rem;
+          margin-right: 1rem;
+        }
+        input,
+        textarea {
+          background-color: #464646;
+          color: white;
+          font-size: 1.25rem;
+          padding: 0.25rem 0rem;
+          border: none;
+          min-width: 40vw;
+          // width: 80%;
+        }
+        textarea {
+          // 用來改變"需求"兩字的位置
+          vertical-align: top;
+        }
+      }
+      button {
+        align-self: center;
+        padding: 1.5rem 3rem;
+        font-size: 1.5rem;
+        background-color: #464646;
+        color: white;
+        cursor: pointer;
+        border: none;
+        border-radius: 10%;
+      }
+    }
+  }
+  div.line{
+    background-color: black;
+    width: 2px;
+  }
+  section.contact {
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+    flex: 1 1 500px;
+  }
 }
 footer {
   a {
@@ -151,8 +203,8 @@ footer {
         }
       }
     }
-    section.table{
-      img.pythonImg{
+    section.table {
+      img.pythonImg {
         width: 15vw;
       }
     }
@@ -160,12 +212,15 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center;
-      img{
+      img {
         width: 50vw;
       }
       div.grayRect {
         display: none;
       }
+    }
+    div.line{
+      display: none;
     }
   }
 }
